@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center space-x-196 gap-2">
             <Link to ="/" className="flex items-center gap-2 text-[var(--color-text)] font-bold text-lg">
             <Dumbbell className="w-6 h-6 text-[var(--color-accent)] "/>
-            <span className="font-semibold text-lg">Gym AI Planner</span>
+            <span className="font-semibold text-lg text-[var(--color-white)]">Gym AI Planner</span>
             </Link>
 
             <nav>

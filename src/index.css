@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
+
 @theme {
   --font-sans: "Geist", system-ui, sans-serif;
 
   --color-background: #0a0a0a;
-  --color-foreground: #fafafa;
+  --color-foreground: #ffffff;
   --color-muted: #a1a1aa;
   --color-border: #27272a;
   --color-card: #18181b;
@@ -17,6 +18,7 @@
     font-family: var(--font-sans);
     background-color: var(--color-background);
     color: var(--color-foreground);
+    
   }
 
   body {
@@ -24,5 +26,13 @@
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+
+/* 
+  Override Better Auth skeleton colors */
+  [data-slot="skeleton"],
+  .animate-pulse {
+    background-color: var(--color-border) !important;
   }
 }
